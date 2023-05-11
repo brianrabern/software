@@ -1,12 +1,10 @@
 import React from "react";
 import { useEffect } from "react";
-import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
-import BrianRabernResume from "./BrianRabernResume.pdf";
+import BrianRabernResume from "./BrianRabernResume.png";
 import { Link } from "react-router-dom";
 import { themeChange } from "theme-change";
 import { useNavigate } from "react-router-dom";
 
-// Create Document Component
 const ResumePdf = () => {
   const navigate = useNavigate();
   useEffect(() => {
@@ -129,18 +127,7 @@ const ResumePdf = () => {
         </a>
         <div className="py-10 flex justify-center w-full h-full">
           <div className="overflow-scroll">
-            <Document
-              file={BrianRabernResume}
-              options={{
-                workerSrc: "pdf.worker.js",
-              }}
-            >
-              <Page
-                pageNumber={1}
-                renderTextLayer={false}
-                renderAnnotationLayer={false}
-              />
-            </Document>
+            <img src={BrianRabernResume} alt="resume" />
           </div>
         </div>
       </main>
