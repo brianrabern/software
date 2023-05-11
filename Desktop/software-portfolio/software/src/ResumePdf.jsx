@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-import { Document, Page } from "react-pdf";
+import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 import BrianRabernResume from "./BrianRabernResume.pdf";
 import { Link } from "react-router-dom";
 import { themeChange } from "theme-change";
