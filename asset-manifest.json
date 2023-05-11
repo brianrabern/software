@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/software/static/css/main.302c501b.css",
-    "main.js": "/software/static/js/main.2e6efa43.js",
+    "main.css": "/software/static/css/main.f0bf95c0.css",
+    "main.js": "/software/static/js/main.fd0f1fad.js",
     "static/media/bdr2.png": "/software/static/media/bdr2.0fdef6d04d318c721442.png",
-    "pdf.worker.js": "/software/6db098cf5787eb1df07f6901f31a3231.js",
-    "static/media/BrianRabernResume.pdf": "/software/static/media/BrianRabernResume.3156883d4c4f6a32f0e5.pdf",
+    "static/media/BrianRabernResume.png": "/software/static/media/BrianRabernResume.bf2f885144f3839fa01e.png",
     "index.html": "/software/index.html",
-    "main.302c501b.css.map": "/software/static/css/main.302c501b.css.map",
-    "main.2e6efa43.js.map": "/software/static/js/main.2e6efa43.js.map"
+    "main.f0bf95c0.css.map": "/software/static/css/main.f0bf95c0.css.map",
+    "main.fd0f1fad.js.map": "/software/static/js/main.fd0f1fad.js.map"
   },
   "entrypoints": [
-    "static/css/main.302c501b.css",
-    "static/js/main.2e6efa43.js"
+    "static/css/main.f0bf95c0.css",
+    "static/js/main.fd0f1fad.js"
   ]
 }
