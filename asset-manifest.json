@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/software/static/css/main.302c501b.css",
+    "main.js": "/software/static/js/main.e1693abd.js",
+    "static/media/bdr2.png": "/software/static/media/bdr2.0fdef6d04d318c721442.png",
+    "static/media/BrianRabernResume.pdf": "/software/static/media/BrianRabernResume.3156883d4c4f6a32f0e5.pdf",
+    "index.html": "/software/index.html",
+    "main.302c501b.css.map": "/software/static/css/main.302c501b.css.map",
+    "main.e1693abd.js.map": "/software/static/js/main.e1693abd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.302c501b.css",
+    "static/js/main.e1693abd.js"
+  ]
+}
