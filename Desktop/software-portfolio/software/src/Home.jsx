@@ -4,7 +4,7 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin,
 } from "react-icons/ai";
-
+import { MdSwipe } from "react-icons/md";
 import {
   SiPython,
   SiJavascript,
@@ -205,33 +205,15 @@ export default function Home() {
               </code>
             </h3>
 
-            <p className="flex items-center justify-center py-2 text-lg leading-8 text-accent">
+            <p className="flex items-center justify-center py-2 text-lg leading-8 text-accent mb-3">
               Below are some of the projects I've worked on recently.
             </p>
           </div>
-
-          <div className="flex justify-center w-full gap-2">
-            <a href="#item1" className="btn btn-xs rounded bg-secondary">
-              1
-            </a>
-            <a
-              href="#item2"
-              className="btn btn-xs rounded bg-secondary text-default"
-            >
-              2
-            </a>
-            <a
-              href="#item3"
-              className="btn btn-xs rounded bg-secondary text-default"
-            >
-              3
-            </a>
-            <a
-              href="#item4"
-              className="btn btn-xs rounded bg-secondary text-default"
-            >
-              4
-            </a>
+          <div className="flex items-center justify-center">
+            <MdSwipe
+              style={{ transform: "rotate(180deg)" }}
+              className=" text-3xl text-accent"
+            />
           </div>
           <div className="carousel w-full">
             <div id="item1" className="carousel-item w-full h-full">
