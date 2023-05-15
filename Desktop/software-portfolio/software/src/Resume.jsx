@@ -179,7 +179,7 @@ const Resume = () => {
             <code className="px-5 text-base-100">brian.rabern@gmail.com</code>
             <br />
             <code className="px-5  text-base-100">
-              <a href="https://brianrabern.net">brianrabern.net</a>
+              <a href="https://portfolio.brianrabern.net">brianrabern.net</a>
             </code>
             <p className="px-5 mt-2 text-base-100">541-430-4052</p>
 
@@ -221,7 +221,7 @@ const Resume = () => {
                 <div className="text-lg text-default px-10 py-3">
                   <ul>
                     <li>
-                      JavaScript, React, Redux, Tailwind, CSS, HTML, SVG Python,
+                      JavaScript, React, Redux, Tailwind, CSS, HTML, SVG, Python,
                       FastAPI, Django, Postgres, MongoDB, SQL Google Cloud,
                       Docker, Git
                     </li>
@@ -238,21 +238,21 @@ const Resume = () => {
               </p>
               <div className="flex space-x-4 py-3 px-5 text-base-100">
                 <a href="https://linkedin.com/in/brian-rabern">
-                  <AiFillLinkedin />
+                  <AiFillLinkedin className="hover:text-accent-focus"/>
                 </a>
                 <a href="https://github.com/brianrabern">
                   {" "}
-                  <AiFillGithub />
+                  <AiFillGithub className="hover:text-warning"/>
                 </a>
                 <a href="https://gitlab.com/brianrabern">
-                  <AiFillGitlab />
+                  <AiFillGitlab className="hover:text-error"/>
                 </a>
                 <a href="https://twitter.com/brian_rabern">
-                  <AiFillTwitterCircle />
+                  <AiFillTwitterCircle className="hover:text-info"/>
                 </a>
 
                 <a href="https://scholar.google.com/citations?user=vzRA2EMAAAAJ&hl=en">
-                  <SiGooglescholar />
+                  <SiGooglescholar className="hover:text-blue-300" />
                 </a>
               </div>
 

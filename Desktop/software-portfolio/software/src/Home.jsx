@@ -219,13 +219,13 @@ export default function Home() {
               className=" text-3xl text-accent"
             />
           </div>
-          <div className="tooltip" data-tip="swipe left/right">
+          {/* <div className="tooltip" data-tip="swipe left/right"> */}
             <div className="carousel w-full">
               <div id="item1" className="carousel-item w-full h-full">
                 <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10 bg-secondary flex-1">
-                  <h3 className="text-default text-2xl font-medium pb-2">
+                  <div className="tooltip" data-tip="swipe left/right"><h3 className="text-default text-2xl font-medium pb-2">
                     MunroGo
-                  </h3>
+                  </h3></div>
                   <div className="mb-2 text-warning">
                     [<a href="https://gitlab.com/elijahram/munro-go">code</a>] [
                     <a href="https://elijahram.gitlab.io/munro-go">live</a>]
@@ -351,7 +351,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          {/* </div> */}
         </section>
         <div className="flex items-center justify-center mb-12">
           <Link to="/resume">
