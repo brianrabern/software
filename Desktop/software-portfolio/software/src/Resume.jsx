@@ -23,6 +23,8 @@ import {
   SiGit,
   SiPostgresql,
   SiDjango,
+  SiGooglecloud,
+  SiFlask,
 } from "react-icons/si";
 import { FaCss3, FaGlobe } from "react-icons/fa";
 import { BsCaretDownSquareFill, BsCaretUpSquareFill } from "react-icons/bs";
@@ -33,9 +35,9 @@ import { themeChange } from "theme-change";
 import { useNavigate } from "react-router-dom";
 
 const Resume = () => {
-  window.scrollTo(0, 0);
   useEffect(() => {
     themeChange(false);
+    window.scrollTo(0, 0);
   }, []);
 
   const navigate = useNavigate();
@@ -58,14 +60,14 @@ const Resume = () => {
         <nav className="py-8 mb-12 flex justify-between items-center">
           <ul className="justify-end">
             <li>
-              {" "}
               <input
                 data-set-theme="business"
                 data-act-class="ACTIVECLASS"
                 type="radio"
                 name="theme"
-                className="radio"
+                className="radio tooltip"
               />
+
               <input
                 data-set-theme="coffee"
                 data-act-class="ACTIVECLASS"
@@ -103,13 +105,14 @@ const Resume = () => {
               />
             </li>
           </ul>
+
           <ul className="menu menu-horizontal bg-base-100 rounded-box">
             <li>
               <div className="tooltip" data-tip="home">
                 <Link to="/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
+                    className="h-6 w-6"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -130,7 +133,7 @@ const Resume = () => {
                 <Link to="/resume">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
+                    className="h-6 w-6"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -178,15 +181,15 @@ const Resume = () => {
             <code className="px-5  text-base-100">
               <a href="https://brianrabern.net">brianrabern.net</a>
             </code>
-            <p className="px-5 mt-2 text-base-100">541-672-4056</p>
+            <p className="px-5 mt-2 text-base-100">541-430-4052</p>
 
             <p className="px-5 text-base-100">Bend, OR</p>
           </div>
 
           <div>
-            <div className="text-2xl shadow-lg px-4 rounded-xl my-5 bg-info">
-              <p className="text-sm text-accent-focus py-5">Technical Skills</p>
-              <div className="flex space-x-4 py-3 px-5 text-accent-focus">
+            <div className="text-2xl shadow-lg px-4 rounded-xl my-5 bg-base-200">
+              <p className="text-sm text-default py-5">Technical Skills</p>
+              <div className="flex space-x-4 py-3 px-5 text-default">
                 <SiPython />
                 <SiJavascript />
                 <SiFastapi />
@@ -194,9 +197,9 @@ const Resume = () => {
                 <SiMongodb />
                 <SiPostgresql />
                 <SiSvg />
-                <SiDocker />
+                <SiGooglecloud />
               </div>
-              <div className="flex space-x-4 py-3 px-5 text-accent-focus">
+              <div className="flex space-x-4 py-3 px-5 text-default">
                 <SiReact />
                 <SiRedux />
                 <SiHtml5 />
@@ -204,33 +207,24 @@ const Resume = () => {
                 <SiTailwindcss />
                 <SiBootstrap />
                 <SiGit />
+                <SiDocker />
               </div>
               <button className="justify-end mt-5" onClick={handleClick}>
                 {isExpandedTech ? (
-                  <BsCaretUpSquareFill className="text-accent-focus bg-info text-sm" />
+                  <BsCaretUpSquareFill className="text-default bg-base-200 text-sm" />
                 ) : (
-                  <BsCaretDownSquareFill className="text-accent-focus bg-info text-sm" />
+                  <BsCaretDownSquareFill className="text-default bg-base-200 text-sm" />
                 )}
               </button>
 
               {isExpandedTech && (
-                <div className="text-lg text-accent-focus px-10 py-3">
+                <div className="text-lg text-default px-10 py-3">
                   <ul>
-                    <li>Python</li>
-                    <li>JavaScript</li>
-                    <li>FastAPI</li>
-                    <li>Django</li>
-                    <li>MongoDB</li>
-                    <li>SQL</li>
-                    <li>SVG</li>
-                    <li>Docker</li>
-                    <li>Git</li>
-                    <li>React</li>
-                    <li>Redux Toolkit</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Tailwind</li>
-                    <li>LaTeX</li>
+                    <li>
+                      JavaScript, React, Redux, Tailwind, CSS, HTML, SVG Python,
+                      FastAPI, Django, Postgres, MongoDB, SQL Google Cloud,
+                      Docker, Git
+                    </li>
                   </ul>
                 </div>
               )}
@@ -243,11 +237,23 @@ const Resume = () => {
                 Socials and Repositories
               </p>
               <div className="flex space-x-4 py-3 px-5 text-base-100">
-                <AiFillGithub />
-                <AiFillGitlab />
-                <AiFillTwitterCircle />
-                <AiFillLinkedin />
-                <SiGooglescholar />
+                <a href="https://linkedin.com/in/brian-rabern">
+                  <AiFillLinkedin />
+                </a>
+                <a href="https://github.com/brianrabern">
+                  {" "}
+                  <AiFillGithub />
+                </a>
+                <a href="https://gitlab.com/brianrabern">
+                  <AiFillGitlab />
+                </a>
+                <a href="https://twitter.com/brian_rabern">
+                  <AiFillTwitterCircle />
+                </a>
+
+                <a href="https://scholar.google.com/citations?user=vzRA2EMAAAAJ&hl=en">
+                  <SiGooglescholar />
+                </a>
               </div>
 
               <button className="justify-end mt-5" onClick={handleClickLinks}>
@@ -305,6 +311,7 @@ const Resume = () => {
           </h2>
 
           {/* exper1 */}
+
           <div>
             <div className="py-3 px-5">
               <p className="font-medium text-default">
@@ -412,14 +419,13 @@ const Resume = () => {
           <h2 className="text-xl text-accent font-medium mt-5">
             Recent Development Experience
           </h2>
-
           {/* app1*/}
           <div>
             <div className="py-3 px-5">
               <p className="font-medium text-default flex gap-3 items-center">
                 MunroGo{" "}
                 <a href="https://gitlab.com/elijahram/munro-go">
-                  <AiFillGitlab className="hover:text-accent" />
+                  <AiFillGitlab className="hover:text-error" />
                 </a>
                 <a href="https://elijahram.gitlab.io/munro-go">
                   <FaGlobe className="hover:text-info" />
@@ -483,109 +489,143 @@ const Resume = () => {
               <li>JavaScript, React, HTML5, CSS3</li>
             </ul>
           </div>
-        </section>
-
-        <section>
-          <h2 className="text-xl text-accent font-medium mt-5">
-            Publication Highlights
-          </h2>
-          {/* app1*/}
+          {/* app4*/}
           <div>
             <div className="py-3 px-5">
               <p className="font-medium text-default flex gap-3 items-center">
-                <a
-                  className="hover:text-info"
-                  href="https://brianrabern.net/sshlpe.pdf"
-                >
-                  A simple solution to the hardest logic puzzle ever
-                </a>{" "}
+                PhilSoc Library
+                <a href="https://gitlab.com/brianrabern/library">
+                  <AiFillGitlab className="hover:text-error" />
+                </a>
               </p>
-              <p className="text-gray-600 italic">
-                Analysis, (2008), 68(298): 105-112 (w/ L. Rabern).
-              </p>
-            </div>
-            <div className="py-3 px-5">
-              <p className="font-medium text-default flex gap-3 items-center">
-                <a
-                  className="hover:text-info"
-                  href="https://doi.org/10.3765/sp.15.12"
-                >
-                  Scorekeeping in a chess game
-                </a>{" "}
-              </p>
-              <p className="text-gray-600 italic">
-                Semantics and Pragmatics, (2022), 15:12, (w/ B. Pickel).
-              </p>
-            </div>
-            <div className="py-3 px-5">
-              <p className="font-medium text-default flex gap-3 items-center">
-                <a
-                  className="hover:text-info"
-                  href="https://doi.org/10.1007/s10992-022-09675-3"
-                >
-                  Pure quotation in linguistic context
-                </a>{" "}
-              </p>
-              <p className="text-gray-600 italic">
-                Journal of Philosophical Logic, (2023), 52: 393-413
-              </p>
-            </div>
-            <div className="py-3 px-5">
-              <p className="font-medium text-default flex gap-3 items-center">
-                <a
-                  className="hover:text-info"
-                  href="http://philpapers.org/rec/PICTAO-7"
-                >
-                  The antinomy of the variable: A Tarskian resolution
-                </a>{" "}
-              </p>
-              <p className="text-gray-600 italic">
-                Journal of Philosophy, (2016), 113(3): 137-170. (w/ B. Pickel)
-              </p>
-            </div>
-            <div className="py-3 px-5">
-              <p className="font-medium text-default flex gap-3 items-center">
-                <a
-                  className="hover:text-info"
-                  href="https://doi.org/10.1080/0020174X.2018.1470568"
-                >
-                  Binding bound variables in epistemic contexts
-                </a>{" "}
-              </p>
-              <p className="text-gray-600 italic">
-                Inquiry, (2021), 64 (5-6): 533-563
-              </p>
-            </div>
-            <div className="py-3 px-5">
-              <p className="font-medium text-default flex gap-3 items-center">
-                <a
-                  className="hover:text-info"
-                  href="http://dx.doi.org/10.1093/analys/anu032"
-                >
-                  Two-dimensional semantics and the nesting problem
-                </a>{" "}
-              </p>
-              <p className="text-gray-600 italic">
-                Analysis, (2014), 74(2): 210-224 (w/ D.{" "}
-                <a className="hover:text-info" href="https://consc.net/">
-                  Chalmers
-                </a>{" "}
-                )
+              <p className="text-gray-600">
+                A full-stack web application using Django, CSS and HTML with
+                searchable SQL database. Includes a librarian interface, a
+                self-checkout system, and integrates with the Google Books API.
               </p>
             </div>
 
-            <div className="py-3 px-5">
-              <p className="text-gray-600 flex gap-3 items-center">
-                See all publications on my
-                <a
-                  className="text-gray-600 hover:text-info"
-                  href="https://philpeople.org/profiles/brian-rabern"
-                >
-                  PhilPapers
-                </a>
-                profile
-              </p>
+            <ul className="px-10 list-disc text-gray-600">
+              <li>Django, SQL, HTML5, CSS3</li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="flex justify-between">
+          <div>
+            <h2 className="text-xl text-accent font-medium mt-5">
+              Publication Highlights
+            </h2>
+            {/* app1*/}
+
+            <div>
+              <div className="py-3 px-5">
+                <p className="font-medium text-default flex gap-3 items-center">
+                  <a
+                    className="hover:text-info"
+                    href="https://brianrabern.net/sshlpe.pdf"
+                  >
+                    A simple solution to the hardest logic puzzle ever
+                  </a>{" "}
+                </p>
+                <p className="text-gray-600 italic">
+                  Analysis, (2008), 68(298): 105-112 (w/ L. Rabern).
+                </p>
+              </div>
+              <div className="py-3 px-5">
+                <p className="font-medium text-default flex gap-3 items-center">
+                  <a
+                    className="hover:text-info"
+                    href="https://doi.org/10.3765/sp.15.12"
+                  >
+                    Scorekeeping in a chess game
+                  </a>{" "}
+                </p>
+                <p className="text-gray-600 italic">
+                  Semantics and Pragmatics, (2022), 15:12, (w/ B. Pickel).
+                </p>
+              </div>
+              <div className="py-3 px-5">
+                <p className="font-medium text-default flex gap-3 items-center">
+                  <a
+                    className="hover:text-info"
+                    href="https://doi.org/10.1007/s10992-022-09675-3"
+                  >
+                    Pure quotation in linguistic context
+                  </a>{" "}
+                </p>
+                <p className="text-gray-600 italic">
+                  Journal of Philosophical Logic, (2023), 52: 393-413
+                </p>
+              </div>
+              <div className="py-3 px-5">
+                <p className="font-medium text-default flex gap-3 items-center">
+                  <a
+                    className="hover:text-info"
+                    href="http://philpapers.org/rec/PICTAO-7"
+                  >
+                    The antinomy of the variable: A Tarskian resolution
+                  </a>{" "}
+                </p>
+                <p className="text-gray-600 italic">
+                  Journal of Philosophy, (2016), 113(3): 137-170. (w/ B. Pickel)
+                </p>
+              </div>
+              <div className="py-3 px-5">
+                <p className="font-medium text-default flex gap-3 items-center">
+                  <a
+                    className="hover:text-info"
+                    href="https://doi.org/10.1080/0020174X.2018.1470568"
+                  >
+                    Binding bound variables in epistemic contexts
+                  </a>{" "}
+                </p>
+                <p className="text-gray-600 italic">
+                  Inquiry, (2021), 64 (5-6): 533-563
+                </p>
+              </div>
+              <div className="py-3 px-5">
+                <p className="font-medium text-default flex gap-3 items-center">
+                  <a
+                    className="hover:text-info"
+                    href="http://dx.doi.org/10.1093/analys/anu032"
+                  >
+                    Two-dimensional semantics and the nesting problem
+                  </a>{" "}
+                </p>
+                <p className="text-gray-600 italic">
+                  Analysis, (2014), 74(2): 210-224 (w/ D.{" "}
+                  <a className="hover:text-info" href="https://consc.net/">
+                    Chalmers
+                  </a>{" "}
+                  )
+                </p>
+              </div>
+
+              <div className="py-3 px-5">
+                <p className="text-gray-600 flex gap-3 items-center">
+                  See all publications on my
+                  <a
+                    className="text-gray-600 hover:text-info"
+                    href="https://philpeople.org/profiles/brian-rabern"
+                  >
+                    PhilPapers
+                  </a>
+                  profile
+                </p>
+              </div>
             </div>
+          </div>
+          <div>
+            <a href="https://brianrabern.net/science-of-meaning.html">
+              {" "}
+              <img
+                src="https://brianrabern.net/som-cover.png"
+                height="300"
+                width="200"
+                alt="science of meaning"
+              />
+            </a>
           </div>
         </section>
       </main>

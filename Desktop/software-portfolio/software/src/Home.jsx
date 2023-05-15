@@ -38,61 +38,64 @@ export default function Home() {
       <main className="px-10">
         <section>
           <nav className="py-8 mb-12 flex justify-between items-center">
-            <ul className="justify-end">
-              <li>
-                {" "}
-                <input
-                  data-set-theme="business"
-                  data-act-class="ACTIVECLASS"
-                  type="radio"
-                  name="theme"
-                  className="radio"
-                  id="business-radio"
-                />
-                <input
-                  data-set-theme="coffee"
-                  data-act-class="ACTIVECLASS"
-                  type="radio"
-                  name="theme"
-                  className="radio"
-                />
-                <input
-                  data-set-theme="dark"
-                  data-act-class="ACTIVECLASS"
-                  type="radio"
-                  name="theme"
-                  className="radio"
-                />
-                <input
-                  data-set-theme="black"
-                  data-act-class="ACTIVECLASS"
-                  type="radio"
-                  name="theme"
-                  className="radio"
-                />
-                <input
-                  data-set-theme="cyberpunk"
-                  data-act-class="ACTIVECLASS"
-                  type="radio"
-                  name="theme"
-                  className="radio"
-                />
-                <input
-                  data-set-theme="bumblebee"
-                  data-act-class="ACTIVECLASS"
-                  type="radio"
-                  name="theme"
-                  className="radio"
-                />
-              </li>
-            </ul>
+            <div className="tooltip" data-tip="mood?">
+              <ul className="justify-end">
+                <li>
+                  {" "}
+                  <input
+                    data-set-theme="business"
+                    data-act-class="ACTIVECLASS"
+                    type="radio"
+                    name="theme"
+                    className="radio"
+                    id="business-radio"
+                  />
+                  <input
+                    data-set-theme="coffee"
+                    data-act-class="ACTIVECLASS"
+                    type="radio"
+                    name="theme"
+                    className="radio"
+                  />
+                  <input
+                    data-set-theme="dark"
+                    data-act-class="ACTIVECLASS"
+                    type="radio"
+                    name="theme"
+                    className="radio"
+                  />
+                  <input
+                    data-set-theme="black"
+                    data-act-class="ACTIVECLASS"
+                    type="radio"
+                    name="theme"
+                    className="radio"
+                  />
+                  <input
+                    data-set-theme="cyberpunk"
+                    data-act-class="ACTIVECLASS"
+                    type="radio"
+                    name="theme"
+                    className="radio"
+                  />
+                  <input
+                    data-set-theme="bumblebee"
+                    data-act-class="ACTIVECLASS"
+                    type="radio"
+                    name="theme"
+                    className="radio"
+                  />
+                </li>
+              </ul>{" "}
+            </div>
+
             <ul className="menu menu-horizontal bg-base-100 rounded-box">
               <li>
                 <div className="tooltip" data-tip="home">
                   <Link to="/">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
+                      className="h-6 w-6"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -112,7 +115,7 @@ export default function Home() {
                   <Link to="/resume">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
+                      className="h-6 w-6"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -209,139 +212,142 @@ export default function Home() {
               Below are some of the projects I've worked on recently.
             </p>
           </div>
+
           <div className="flex items-center justify-center">
             <MdSwipe
               style={{ transform: "rotate(180deg)" }}
               className=" text-3xl text-accent"
             />
           </div>
-          <div className="carousel w-full">
-            <div id="item1" className="carousel-item w-full h-full">
-              <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10 bg-secondary flex-1">
-                <h3 className="text-default text-2xl font-medium pb-2">
-                  MunroGo
-                </h3>
-                <div className="mb-2 text-warning">
-                  [<a href="https://gitlab.com/elijahram/munro-go">code</a>] [
-                  <a href="https://elijahram.gitlab.io/munro-go">live</a>]
-                </div>
-                <iframe
-                  src="https://www.youtube.com/embed/WH_QtAKQunQ"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  title="munro-go"
-                  allowFullScreen
-                  className="w-full h-80 lg:h-[42rem]"
-                ></iframe>
+          <div className="tooltip" data-tip="swipe left/right">
+            <div className="carousel w-full">
+              <div id="item1" className="carousel-item w-full h-full">
+                <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10 bg-secondary flex-1">
+                  <h3 className="text-default text-2xl font-medium pb-2">
+                    MunroGo
+                  </h3>
+                  <div className="mb-2 text-warning">
+                    [<a href="https://gitlab.com/elijahram/munro-go">code</a>] [
+                    <a href="https://elijahram.gitlab.io/munro-go">live</a>]
+                  </div>
+                  <iframe
+                    src="https://www.youtube.com/embed/WH_QtAKQunQ"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    title="munro-go"
+                    allowFullScreen
+                    className="w-full h-80 lg:h-[42rem]"
+                  ></iframe>
 
-                <p className="py-2 text-default mt-3">
-                  A mountain-climbing app that allows users to log and track
-                  climbs and statistics using FastAPI and React.
-                </p>
-                <div className="justify-end items-center text-2xl flex space-x-4 text-default flex-wrap mt-3">
-                  <SiPython />
-                  <SiJavascript />
-                  <SiMongodb />
-                  <SiFastapi />
-                  <SiReact />
-                  <SiRedux />
-                  <SiTailwindcss />
-                  <SiDaisyui />
+                  <p className="py-2 text-default mt-3">
+                    A mountain-climbing app that allows users to log and track
+                    climbs and statistics using FastAPI and React.
+                  </p>
+                  <div className="justify-end items-center text-2xl flex space-x-4 text-default flex-wrap mt-3">
+                    <SiPython />
+                    <SiJavascript />
+                    <SiMongodb />
+                    <SiFastapi />
+                    <SiReact />
+                    <SiRedux />
+                    <SiTailwindcss />
+                    <SiDaisyui />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div id="item2" className="carousel-item w-full h-full">
-              <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10  bg-secondary flex-1">
-                <h3 className="text-default text-2xl font-medium pb-2">
-                  vennPlayground
-                </h3>
-                <div className="mb-2 text-warning">
-                  [
-                  <a href="https://github.com/brianrabern/vennPlayground">
-                    code
-                  </a>
-                  ] [
-                  <a href="https://brianrabern.github.io/vennPlayground/">
-                    live
-                  </a>
-                  ]
-                </div>
-                <iframe
-                  src="https://youtube.com/embed/WQIxw2IvQTI"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  title="vennPlayground"
-                  allowFullScreen
-                  className="w-full h-80 lg:h-[42rem]"
-                ></iframe>
+              <div id="item2" className="carousel-item w-full h-full">
+                <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10  bg-secondary flex-1">
+                  <h3 className="text-default text-2xl font-medium pb-2">
+                    vennPlayground
+                  </h3>
+                  <div className="mb-2 text-warning">
+                    [
+                    <a href="https://github.com/brianrabern/vennPlayground">
+                      code
+                    </a>
+                    ] [
+                    <a href="https://brianrabern.github.io/vennPlayground/">
+                      live
+                    </a>
+                    ]
+                  </div>
+                  <iframe
+                    src="https://youtube.com/embed/WQIxw2IvQTI"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    title="vennPlayground"
+                    allowFullScreen
+                    className="w-full h-80 lg:h-[42rem]"
+                  ></iframe>
 
-                <p className="py-2 text-default mt-3">
-                  An interface for generating and semantically evaluating Venn
-                  Diagrams utilizing React components and SVG technology.
-                </p>
-                <div className="justify-end items-center text-2xl flex space-x-4 text-default flex-wrap mt-3">
-                  <SiSvg />
-                  <SiJavascript />
-                  <SiHtml5 />
-                  <FaCss3 />
-                  <SiBootstrap />
-                  <SiReact />
+                  <p className="py-2 text-default mt-3">
+                    An interface for generating and semantically evaluating Venn
+                    Diagrams utilizing React components and SVG technology.
+                  </p>
+                  <div className="justify-end items-center text-2xl flex space-x-4 text-default flex-wrap mt-3">
+                    <SiSvg />
+                    <SiJavascript />
+                    <SiHtml5 />
+                    <FaCss3 />
+                    <SiBootstrap />
+                    <SiReact />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div id="item3" className="carousel-item w-full h-full">
-              <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10  bg-secondary flex-1">
-                <h3 className="text-default text-2xl font-medium pb-2">
-                  Hofstadter's MU Playground
-                </h3>
-                <div className="mb-2 text-warning">
-                  [<a href="https://mu-playground.brianrabern.net/">code</a>] [
-                  <a href="https://brianrabern.github.io/">live</a>]
-                </div>
-                <iframe
-                  src="https://youtube.com/embed/bu6oVyBziM0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  title="mu"
-                  allowFullScreen
-                  className="w-full h-80 lg:h-[42rem]"
-                ></iframe>
+              <div id="item3" className="carousel-item w-full h-full">
+                <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10  bg-secondary flex-1">
+                  <h3 className="text-default text-2xl font-medium pb-2">
+                    Hofstadter's MU Playground
+                  </h3>
+                  <div className="mb-2 text-warning">
+                    [<a href="https://mu-playground.brianrabern.net/">code</a>]
+                    [<a href="https://brianrabern.github.io/">live</a>]
+                  </div>
+                  <iframe
+                    src="https://youtube.com/embed/bu6oVyBziM0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    title="mu"
+                    allowFullScreen
+                    className="w-full h-80 lg:h-[42rem]"
+                  ></iframe>
 
-                <p className="py-2 text-default mt-3">
-                  A user-friendly interface implementing the logic for
-                  Hofstadter's proof system employing React components.
-                </p>
-                <div className="justify-end items-center text-2xl flex space-x-4 text-default flex-wrap mt-3">
-                  <SiReact />
-                  <SiJavascript />
-                  <SiHtml5 />
-                  <FaCss3 />
+                  <p className="py-2 text-default mt-3">
+                    A user-friendly interface implementing the logic for
+                    Hofstadter's proof system employing React components.
+                  </p>
+                  <div className="justify-end items-center text-2xl flex space-x-4 text-default flex-wrap mt-3">
+                    <SiReact />
+                    <SiJavascript />
+                    <SiHtml5 />
+                    <FaCss3 />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div id="item4" className="carousel-item w-full h-full">
-              <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10  bg-secondary flex-1">
-                <h3 className="text-default text-2xl font-medium pb-2">
-                  Elogic
-                </h3>
-                <div className="mb-2 text-warning">
-                  [<a href="https://info.elogic.land/">license info</a>]
-                </div>
-                <iframe
-                  src="https://youtube.com/embed/vuYXTmYnnaw"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  title="elogic"
-                  allowFullScreen
-                  className="w-full h-80 lg:h-[42rem]"
-                ></iframe>
+              <div id="item4" className="carousel-item w-full h-full">
+                <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10  bg-secondary flex-1">
+                  <h3 className="text-default text-2xl font-medium pb-2">
+                    Elogic
+                  </h3>
+                  <div className="mb-2 text-warning">
+                    [<a href="https://info.elogic.land/">license info</a>]
+                  </div>
+                  <iframe
+                    src="https://youtube.com/embed/vuYXTmYnnaw"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    title="elogic"
+                    allowFullScreen
+                    className="w-full h-80 lg:h-[42rem]"
+                  ></iframe>
 
-                <p className="py-2 text-default mt-3">
-                  A web-based application for teaching the syntax and semantics
-                  of first-order logic with multiple exersices and automatic
-                  grading.
-                </p>
-                <div className="justify-end items-center text-2xl flex space-x-4 text-default flex-wrap mt-3">
-                  <SiTypescript />
-                  <SiReact />
-                  <SiTailwindcss />
-                  <SiFirebase />
+                  <p className="py-2 text-default mt-3">
+                    A web-based application for teaching the syntax and
+                    semantics of first-order logic with multiple exersices and
+                    automatic grading.
+                  </p>
+                  <div className="justify-end items-center text-2xl flex space-x-4 text-default flex-wrap mt-3">
+                    <SiTypescript />
+                    <SiReact />
+                    <SiTailwindcss />
+                    <SiFirebase />
+                  </div>
                 </div>
               </div>
             </div>
