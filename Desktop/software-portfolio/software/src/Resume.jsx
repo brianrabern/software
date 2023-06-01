@@ -24,7 +24,6 @@ import {
   SiPostgresql,
   SiDjango,
   SiGooglecloud,
-  SiFlask,
 } from "react-icons/si";
 import { FaCss3, FaGlobe } from "react-icons/fa";
 import { BsCaretDownSquareFill, BsCaretUpSquareFill } from "react-icons/bs";
@@ -181,7 +180,7 @@ const Resume = () => {
             <code className="px-5  text-base-100">
               <a href="https://portfolio.brianrabern.net">brianrabern.net</a>
             </code>
-            <p className="px-5 mt-2 text-base-100">541-430-4052</p>
+            <p className="px-5 mt-2 text-base-100">541-530-4337</p>
 
             <p className="px-5 text-base-100">Bend, OR</p>
           </div>
@@ -189,25 +188,10 @@ const Resume = () => {
           <div>
             <div className="text-2xl shadow-lg px-4 rounded-xl my-5 bg-base-200">
               <p className="text-sm text-default py-5">Technical Skills</p>
-              <div className="flex space-x-4 py-3 px-5 text-default">
-                <SiPython />
-                <SiJavascript />
-                <SiFastapi />
-                <SiDjango />
-                <SiMongodb />
-                <SiPostgresql />
-                <SiSvg />
-                <SiGooglecloud />
-              </div>
-              <div className="flex space-x-4 py-3 px-5 text-default">
-                <SiReact />
-                <SiRedux />
-                <SiHtml5 />
-                <FaCss3 />
-                <SiTailwindcss />
-                <SiBootstrap />
-                <SiGit />
-                <SiDocker />
+              <div className="text-lg text-default px-5 py-3">
+                JavaScript, React, Redux, Tailwind, CSS, HTML, SVG, Python,
+                FastAPI, Django, Postgres, MongoDB, SQL Google Cloud, Docker,
+                Git
               </div>
               <button className="justify-end mt-5" onClick={handleClick}>
                 {isExpandedTech ? (
@@ -218,15 +202,29 @@ const Resume = () => {
               </button>
 
               {isExpandedTech && (
-                <div className="text-lg text-default px-10 py-3">
-                  <ul>
-                    <li>
-                      JavaScript, React, Redux, Tailwind, CSS, HTML, SVG, Python,
-                      FastAPI, Django, Postgres, MongoDB, SQL Google Cloud,
-                      Docker, Git
-                    </li>
-                  </ul>
-                </div>
+                <>
+                  <div className="flex space-x-4 py-3 px-5 text-default">
+                    <SiJavascript />
+                    <SiReact />
+                    <SiRedux />
+                    <SiTailwindcss />
+                    <FaCss3 />
+                    <SiHtml5 />
+                    <SiSvg />
+                    <SiDocker />
+                  </div>
+                  <div className="flex space-x-4 py-3 px-5 text-default">
+                    <SiPython />
+                    <SiFastapi />
+                    <SiDjango />
+                    <SiMongodb />
+                    <SiPostgresql />
+                    <SiGooglecloud />
+                    <SiBootstrap />
+
+                    <SiGit />
+                  </div>
+                </>
               )}
             </div>
           </div>
@@ -238,17 +236,17 @@ const Resume = () => {
               </p>
               <div className="flex space-x-4 py-3 px-5 text-base-100">
                 <a href="https://linkedin.com/in/brian-rabern">
-                  <AiFillLinkedin className="hover:text-accent-focus"/>
+                  <AiFillLinkedin className="hover:text-accent-focus" />
                 </a>
                 <a href="https://github.com/brianrabern">
                   {" "}
-                  <AiFillGithub className="hover:text-warning"/>
+                  <AiFillGithub className="hover:text-warning" />
                 </a>
                 <a href="https://gitlab.com/brianrabern">
-                  <AiFillGitlab className="hover:text-error"/>
+                  <AiFillGitlab className="hover:text-error" />
                 </a>
                 <a href="https://twitter.com/brian_rabern">
-                  <AiFillTwitterCircle className="hover:text-info"/>
+                  <AiFillTwitterCircle className="hover:text-info" />
                 </a>
 
                 <a href="https://scholar.google.com/citations?user=vzRA2EMAAAAJ&hl=en">
@@ -265,7 +263,7 @@ const Resume = () => {
               </button>
 
               {isExpandedLinks && (
-                <div className="text-lg text-base-100 px-10 py-3">
+                <div className="text-lg text-base-100 px-5 py-3">
                   <ul>
                     <li>
                       <a href="https://linkedin.com/in/brian-rabern">
@@ -604,14 +602,12 @@ const Resume = () => {
 
               <div className="py-3 px-5">
                 <p className="text-gray-600 flex gap-3 items-center">
-                  See all publications on my
                   <a
                     className="text-gray-600 hover:text-info"
                     href="https://philpeople.org/profiles/brian-rabern"
                   >
-                    PhilPapers
+                    All publications
                   </a>
-                  profile
                 </p>
               </div>
             </div>

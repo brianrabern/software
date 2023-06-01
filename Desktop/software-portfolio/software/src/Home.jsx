@@ -159,11 +159,18 @@ export default function Home() {
               </code>
             </h3>
             <p className="text-lg leading-8 text-accent">
-              With ten years of experience as a philosophy and logic professor
+              Drawing from a decade of experience as a philosophy and logic
+              professor employing formal methods for modeling meaning and human
+              communication, I approach engineering challenges with a blend of
+              analytical rigor and an innovative mindset. Fearlessly exploring
+              alternative possibilities, this distinct perspective enables me to
+              develop products that transcend mere functionality, deeply
+              resonating with users.
+              {/* With ten years of experience as a philosophy and logic professor
               using formal methods to model meaning and human communication, I'm
               now applying my skills to the technology sector. I bring a unique
               perspective to the development process where I create products
-              that are not only functional but also deeply meaningful to users.
+              that are not only functional but also deeply meaningful to users. */}
             </p>
           </div>
 
@@ -220,137 +227,139 @@ export default function Home() {
             />
           </div>
           {/* <div className="tooltip" data-tip="swipe left/right"> */}
-            <div className="carousel w-full">
-              <div id="item1" className="carousel-item w-full h-full">
-                <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10 bg-secondary flex-1">
-                  <div className="tooltip" data-tip="swipe left/right"><h3 className="text-default text-2xl font-medium pb-2">
+          <div className="carousel w-full">
+            <div id="item1" className="carousel-item w-full h-full">
+              <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10 bg-secondary flex-1">
+                <div className="tooltip" data-tip="swipe left/right">
+                  <h3 className="text-default text-2xl font-medium pb-2">
                     MunroGo
-                  </h3></div>
-                  <div className="mb-2 text-warning">
-                    [<a href="https://gitlab.com/elijahram/munro-go">code</a>] [
-                    <a href="https://elijahram.gitlab.io/munro-go">live</a>]
-                  </div>
-                  <iframe
-                    src="https://www.youtube.com/embed/WH_QtAKQunQ"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    title="munro-go"
-                    allowFullScreen
-                    className="w-full h-80 lg:h-[42rem]"
-                  ></iframe>
-
-                  <p className="py-2 text-default mt-3">
-                    A mountain-climbing app that allows users to log and track
-                    climbs and statistics using FastAPI and React.
-                  </p>
-                  <div className="justify-end items-center text-2xl flex space-x-4 text-default flex-wrap mt-3">
-                    <SiPython />
-                    <SiJavascript />
-                    <SiMongodb />
-                    <SiFastapi />
-                    <SiReact />
-                    <SiRedux />
-                    <SiTailwindcss />
-                    <SiDaisyui />
-                  </div>
-                </div>
-              </div>
-              <div id="item2" className="carousel-item w-full h-full">
-                <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10  bg-secondary flex-1">
-                  <h3 className="text-default text-2xl font-medium pb-2">
-                    vennPlayground
                   </h3>
-                  <div className="mb-2 text-warning">
-                    [
-                    <a href="https://github.com/brianrabern/vennPlayground">
-                      code
-                    </a>
-                    ] [
-                    <a href="https://brianrabern.github.io/vennPlayground/">
-                      live
-                    </a>
-                    ]
-                  </div>
-                  <iframe
-                    src="https://youtube.com/embed/WQIxw2IvQTI"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    title="vennPlayground"
-                    allowFullScreen
-                    className="w-full h-80 lg:h-[42rem]"
-                  ></iframe>
-
-                  <p className="py-2 text-default mt-3">
-                    An interface for generating and semantically evaluating Venn
-                    Diagrams utilizing React components and SVG technology.
-                  </p>
-                  <div className="justify-end items-center text-2xl flex space-x-4 text-default flex-wrap mt-3">
-                    <SiSvg />
-                    <SiJavascript />
-                    <SiHtml5 />
-                    <FaCss3 />
-                    <SiBootstrap />
-                    <SiReact />
-                  </div>
                 </div>
-              </div>
-              <div id="item3" className="carousel-item w-full h-full">
-                <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10  bg-secondary flex-1">
-                  <h3 className="text-default text-2xl font-medium pb-2">
-                    Hofstadter's MU Playground
-                  </h3>
-                  <div className="mb-2 text-warning">
-                    [<a href="https://mu-playground.brianrabern.net/">code</a>]
-                    [<a href="https://brianrabern.github.io/">live</a>]
-                  </div>
-                  <iframe
-                    src="https://youtube.com/embed/bu6oVyBziM0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    title="mu"
-                    allowFullScreen
-                    className="w-full h-80 lg:h-[42rem]"
-                  ></iframe>
-
-                  <p className="py-2 text-default mt-3">
-                    A user-friendly interface implementing the logic for
-                    Hofstadter's proof system employing React components.
-                  </p>
-                  <div className="justify-end items-center text-2xl flex space-x-4 text-default flex-wrap mt-3">
-                    <SiReact />
-                    <SiJavascript />
-                    <SiHtml5 />
-                    <FaCss3 />
-                  </div>
+                <div className="mb-2 text-warning">
+                  [<a href="https://gitlab.com/elijahram/munro-go">code</a>] [
+                  <a href="https://elijahram.gitlab.io/munro-go">live</a>]
                 </div>
-              </div>
-              <div id="item4" className="carousel-item w-full h-full">
-                <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10  bg-secondary flex-1">
-                  <h3 className="text-default text-2xl font-medium pb-2">
-                    Elogic
-                  </h3>
-                  <div className="mb-2 text-warning">
-                    [<a href="https://info.elogic.land/">license info</a>]
-                  </div>
-                  <iframe
-                    src="https://youtube.com/embed/vuYXTmYnnaw"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    title="elogic"
-                    allowFullScreen
-                    className="w-full h-80 lg:h-[42rem]"
-                  ></iframe>
+                <iframe
+                  src="https://www.youtube.com/embed/WH_QtAKQunQ"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  title="munro-go"
+                  allowFullScreen
+                  className="w-full h-80 lg:h-[42rem]"
+                ></iframe>
 
-                  <p className="py-2 text-default mt-3">
-                    A web-based application for teaching the syntax and
-                    semantics of first-order logic with multiple exersices and
-                    automatic grading.
-                  </p>
-                  <div className="justify-end items-center text-2xl flex space-x-4 text-default flex-wrap mt-3">
-                    <SiTypescript />
-                    <SiReact />
-                    <SiTailwindcss />
-                    <SiFirebase />
-                  </div>
+                <p className="py-2 text-default mt-3">
+                  A mountain-climbing app that allows users to log and track
+                  climbs and statistics using FastAPI and React.
+                </p>
+                <div className="justify-end items-center text-2xl flex space-x-4 text-default flex-wrap mt-3">
+                  <SiPython />
+                  <SiJavascript />
+                  <SiMongodb />
+                  <SiFastapi />
+                  <SiReact />
+                  <SiRedux />
+                  <SiTailwindcss />
+                  <SiDaisyui />
                 </div>
               </div>
             </div>
+            <div id="item2" className="carousel-item w-full h-full">
+              <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10  bg-secondary flex-1">
+                <h3 className="text-default text-2xl font-medium pb-2">
+                  vennPlayground
+                </h3>
+                <div className="mb-2 text-warning">
+                  [
+                  <a href="https://github.com/brianrabern/vennPlayground">
+                    code
+                  </a>
+                  ] [
+                  <a href="https://brianrabern.github.io/vennPlayground/">
+                    live
+                  </a>
+                  ]
+                </div>
+                <iframe
+                  src="https://youtube.com/embed/WQIxw2IvQTI"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  title="vennPlayground"
+                  allowFullScreen
+                  className="w-full h-80 lg:h-[42rem]"
+                ></iframe>
+
+                <p className="py-2 text-default mt-3">
+                  An interface for generating and semantically evaluating Venn
+                  Diagrams utilizing React components and SVG technology.
+                </p>
+                <div className="justify-end items-center text-2xl flex space-x-4 text-default flex-wrap mt-3">
+                  <SiSvg />
+                  <SiJavascript />
+                  <SiHtml5 />
+                  <FaCss3 />
+                  <SiBootstrap />
+                  <SiReact />
+                </div>
+              </div>
+            </div>
+            <div id="item3" className="carousel-item w-full h-full">
+              <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10  bg-secondary flex-1">
+                <h3 className="text-default text-2xl font-medium pb-2">
+                  Hofstadter's MU Playground
+                </h3>
+                <div className="mb-2 text-warning">
+                  [<a href="https://mu-playground.brianrabern.net/">code</a>] [
+                  <a href="https://brianrabern.github.io/">live</a>]
+                </div>
+                <iframe
+                  src="https://youtube.com/embed/bu6oVyBziM0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  title="mu"
+                  allowFullScreen
+                  className="w-full h-80 lg:h-[42rem]"
+                ></iframe>
+
+                <p className="py-2 text-default mt-3">
+                  A user-friendly interface implementing the logic for
+                  Hofstadter's proof system employing React components.
+                </p>
+                <div className="justify-end items-center text-2xl flex space-x-4 text-default flex-wrap mt-3">
+                  <SiReact />
+                  <SiJavascript />
+                  <SiHtml5 />
+                  <FaCss3 />
+                </div>
+              </div>
+            </div>
+            <div id="item4" className="carousel-item w-full h-full">
+              <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10  bg-secondary flex-1">
+                <h3 className="text-default text-2xl font-medium pb-2">
+                  Elogic
+                </h3>
+                <div className="mb-2 text-warning">
+                  [<a href="https://info.elogic.land/">license info</a>]
+                </div>
+                <iframe
+                  src="https://youtube.com/embed/vuYXTmYnnaw"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  title="elogic"
+                  allowFullScreen
+                  className="w-full h-80 lg:h-[42rem]"
+                ></iframe>
+
+                <p className="py-2 text-default mt-3">
+                  A web-based application for teaching the syntax and semantics
+                  of first-order logic with multiple exersices and automatic
+                  grading.
+                </p>
+                <div className="justify-end items-center text-2xl flex space-x-4 text-default flex-wrap mt-3">
+                  <SiTypescript />
+                  <SiReact />
+                  <SiTailwindcss />
+                  <SiFirebase />
+                </div>
+              </div>
+            </div>
+          </div>
           {/* </div> */}
         </section>
         <div className="flex items-center justify-center mb-12">
