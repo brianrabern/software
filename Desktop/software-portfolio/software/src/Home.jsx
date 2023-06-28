@@ -159,13 +159,20 @@ export default function Home() {
               </code>
             </h3>
             <p className="text-lg leading-8 text-accent">
-              Drawing from a decade of experience as a philosophy and logic
+              As a software engineer with an enthusiasm for advanced
+              technologies, I offer a distinctive combination of skills derived
+              from my background as a philosophy and logic professor. Combining
+              analytical rigor with an innovative mindset, I fearlessly tackle
+              engineering challenges, exploring alternative possibilities to
+              develop products that transcend mere functionality, deeply
+              resonating with users.
+              {/* Drawing from a decade of experience as a philosophy and logic
               professor employing formal methods for modeling meaning and human
               communication, I approach engineering challenges with a blend of
               analytical rigor and an innovative mindset. Fearlessly exploring
               alternative possibilities, this distinct perspective enables me to
               develop products that transcend mere functionality, deeply
-              resonating with users.
+              resonating with users. */}
               {/* With ten years of experience as a philosophy and logic professor
               using formal methods to model meaning and human communication, I'm
               now applying my skills to the technology sector. I bring a unique
@@ -307,8 +314,7 @@ export default function Home() {
                   Hofstadter's MU Playground
                 </h3>
                 <div className="mb-2 text-warning">
-                  [<a href="https://mu-playground.brianrabern.net/">code</a>] [
-                  <a href="https://brianrabern.github.io/">live</a>]
+                  [<a href="https://mu-playground.brianrabern.net/">live</a>]
                 </div>
                 <iframe
                   src="https://youtube.com/embed/bu6oVyBziM0"

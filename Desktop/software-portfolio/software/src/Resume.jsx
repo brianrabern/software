@@ -24,6 +24,7 @@ import {
   SiPostgresql,
   SiDjango,
   SiGooglecloud,
+  SiTypescript,
 } from "react-icons/si";
 import { FaCss3, FaGlobe } from "react-icons/fa";
 import { BsCaretDownSquareFill, BsCaretUpSquareFill } from "react-icons/bs";
@@ -167,7 +168,7 @@ const Resume = () => {
               onInit={(typewriter) => {
                 typewriter
 
-                  .typeString("Brian Rabern, PhD")
+                  .typeString("Brian Rabern")
 
                   .start();
               }}
@@ -189,9 +190,9 @@ const Resume = () => {
             <div className="text-2xl shadow-lg px-4 rounded-xl my-5 bg-base-200">
               <p className="text-sm text-default py-5">Technical Skills</p>
               <div className="text-lg text-default px-5 py-3">
-                JavaScript, React, Redux, Tailwind, CSS, HTML, SVG, Python,
-                FastAPI, Django, Postgres, MongoDB, SQL Google Cloud, Docker,
-                Git
+                JavaScript, Typescript, React, Redux, Tailwind, CSS, HTML, SVG,
+                Python, FastAPI, Django, Postgres, MongoDB, SQL, Google Cloud,
+                Docker, Git
               </div>
               <button className="justify-end mt-5" onClick={handleClick}>
                 {isExpandedTech ? (
@@ -205,6 +206,7 @@ const Resume = () => {
                 <>
                   <div className="flex space-x-4 py-3 px-5 text-default">
                     <SiJavascript />
+                    <SiTypescript />
                     <SiReact />
                     <SiRedux />
                     <SiTailwindcss />
