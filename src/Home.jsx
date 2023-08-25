@@ -20,6 +20,7 @@ import {
   SiBootstrap,
   SiTypescript,
   SiFirebase,
+  SiNextdotjs,
 } from "react-icons/si";
 import { FaCss3 } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
@@ -236,13 +237,13 @@ export default function Home() {
           {/* <div className="tooltip" data-tip="swipe left/right"> */}
           <div className="carousel w-full">
             <div id="item1" className="carousel-item w-full h-full">
-              <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10 bg-secondary flex-1">
+              <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10 bg-primary flex-1">
                 <div className="tooltip" data-tip="swipe left/right">
                   <h3 className="text-default text-2xl font-medium pb-2">
                     MunroGo
                   </h3>
                 </div>
-                <div className="mb-2 text-warning">
+                <div className="mb-2 text-default">
                   [<a href="https://gitlab.com/elijahram/munro-go">code</a>] [
                   <a href="https://elijahram.gitlab.io/munro-go">live</a>]
                 </div>
@@ -270,12 +271,48 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <div id="item1.5" className="carousel-item w-full h-full">
+              <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10 bg-primary flex-1">
+                <div className="tooltip" data-tip="swipe left/right">
+                  <h3 className="text-default text-2xl font-medium pb-2">
+                    symbolify_it
+                  </h3>
+                </div>
+                <div className="mb-2 text-default">
+                  [
+                  <a href="https://github.com/brianrabern/symbolizations">
+                    code
+                  </a>
+                  ] [<a href="https://symbolizations.vercel.app/">live</a>]
+                </div>
+                <iframe
+                  src="https://youtube.com/embed/H7TNHlLP9AQ"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  title="symbolify_it"
+                  allowFullScreen
+                  className="w-full h-80 lg:h-[42rem]"
+                ></iframe>
+
+                <p className="py-2 text-default mt-3">
+                  Enables users to practice their logic symbolization skills by
+                  translating English sentences into the corresponding formal
+                  language representations.
+                </p>
+                <div className="justify-end items-center text-2xl flex space-x-4 text-default flex-wrap mt-3">
+                  <SiNextdotjs />
+                  <SiReact />
+                  <SiTypescript />
+                  <SiPython />
+                  <SiTailwindcss />
+                </div>
+              </div>
+            </div>
             <div id="item2" className="carousel-item w-full h-full">
-              <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10  bg-secondary flex-1">
+              <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10  bg-primary flex-1">
                 <h3 className="text-default text-2xl font-medium pb-2">
                   vennPlayground
                 </h3>
-                <div className="mb-2 text-warning">
+                <div className="mb-2 text-default">
                   [
                   <a href="https://github.com/brianrabern/vennPlayground">
                     code
@@ -309,11 +346,11 @@ export default function Home() {
               </div>
             </div>
             <div id="item3" className="carousel-item w-full h-full">
-              <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10  bg-secondary flex-1">
+              <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10  bg-primary flex-1">
                 <h3 className="text-default text-2xl font-medium pb-2">
                   Hofstadter's MU Playground
                 </h3>
-                <div className="mb-2 text-warning">
+                <div className="mb-2 text-default">
                   [<a href="https://mu-playground.brianrabern.net/">live</a>]
                 </div>
                 <iframe
@@ -337,11 +374,11 @@ export default function Home() {
               </div>
             </div>
             <div id="item4" className="carousel-item w-full h-full">
-              <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10  bg-secondary flex-1">
+              <div className="justify-center text-center shadow-lg p-10 rounded-xl my-10  bg-primary flex-1">
                 <h3 className="text-default text-2xl font-medium pb-2">
                   Elogic
                 </h3>
-                <div className="mb-2 text-warning">
+                <div className="mb-2 text-default">
                   [<a href="https://info.elogic.land/">license info</a>]
                 </div>
                 <iframe
@@ -370,7 +407,7 @@ export default function Home() {
         </section>
         <div className="flex items-center justify-center mb-12">
           <Link to="/resume">
-            <button className="btn btn-wide rounded bg-secondary text-default">
+            <button className="btn btn-wide rounded bg-primary text-black hover:bg-secondary border-0">
               résumé
             </button>
           </Link>

@@ -314,9 +314,7 @@ const Resume = () => {
 
           <div>
             <div className="py-3 px-5">
-              <p className="font-medium text-default">
-                Full Stack Engineer and Co-Founder
-              </p>
+              <p className="font-medium text-default">Software Engineer</p>
               <p className=" text-gray-600">Elogic, Ltd.</p>
               <p className="text-gray-600">2020-present</p>
             </div>
@@ -379,8 +377,11 @@ const Resume = () => {
             <ul className="px-10 list-disc text-gray-600">
               <li>
                 Mastered domain-driven web development with JavaScript and
-                Python. Constructed full-stack architectures with microservices
-                and RESTful APIs.
+                Python.
+              </li>{" "}
+              <li>
+                Constructed full-stack architectures with microservices and
+                RESTful APIs.
               </li>
             </ul>
           </div>
@@ -442,6 +443,32 @@ const Resume = () => {
             <ul className="px-10 list-disc text-gray-600">
               <li>
                 Python, JavaScript, FastAPI, React, Redux, MongoDB, Tailwind
+              </li>
+            </ul>
+          </div>
+          {/* app1.5*/}
+          <div>
+            <div className="py-3 px-5">
+              <p className="font-medium text-default flex gap-3 items-center">
+                symbolify_it{" "}
+                <a href="https://github.com/brianrabern/symbolizations">
+                  <AiFillGithub className="hover:text-warning" />
+                </a>
+                <a href="https://symbolizations.vercel.app/">
+                  <FaGlobe className="hover:text-info" />
+                </a>
+              </p>
+              <p className="text-gray-600">
+                Enables users to practice their logic symbolization skills by
+                translating English sentences into the corresponding formal
+                language representations.
+              </p>
+            </div>
+
+            <ul className="px-10 list-disc text-gray-600">
+              <li>
+                {" "}
+                React, Next.js, Typescript, Python, Nearely.js, Z3, Tailwind
               </li>
             </ul>
           </div>
@@ -511,7 +538,7 @@ const Resume = () => {
           </div>
         </section>
 
-        <section className="flex justify-between">
+        <section>
           <div>
             <h2 className="text-xl text-accent font-medium mt-5">
               Publication Highlights
@@ -602,28 +629,31 @@ const Resume = () => {
                 </p>
               </div>
 
-              <div className="py-3 px-5">
-                <p className="text-gray-600 flex gap-3 items-center">
-                  <a
-                    className="text-gray-600 hover:text-info"
-                    href="https://philpeople.org/profiles/brian-rabern"
-                  >
-                    All publications
+              <div className="flex justify-between">
+                <div className="py-3 px-5">
+                  <p className="text-gray-600 flex gap-3 items-center">
+                    <a
+                      className="text-gray-600 hover:text-info"
+                      href="https://philpeople.org/profiles/brian-rabern"
+                    >
+                      All publications
+                    </a>
+                  </p>
+                </div>
+
+                <div>
+                  <a href="https://brianrabern.net/science-of-meaning.html">
+                    {" "}
+                    <img
+                      src="https://brianrabern.net/som-cover.png"
+                      height="300"
+                      width="200"
+                      alt="science of meaning"
+                    />
                   </a>
-                </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <a href="https://brianrabern.net/science-of-meaning.html">
-              {" "}
-              <img
-                src="https://brianrabern.net/som-cover.png"
-                height="300"
-                width="200"
-                alt="science of meaning"
-              />
-            </a>
           </div>
         </section>
       </main>
